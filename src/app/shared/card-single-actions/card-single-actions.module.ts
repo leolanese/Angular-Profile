@@ -4,6 +4,6 @@ import { NgModule } from '@angular/core';
 @NgModule({
   declarations: [],
   imports: [CommonModule],
-  exports: [],
+  exports: []
 })
-export class CardSingleActionsComponentModule { }
+export class CardSingleActionsComponentModule {}

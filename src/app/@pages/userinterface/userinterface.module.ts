@@ -5,10 +5,7 @@ import { UserinterfaceRoutingModule } from './userinterface-routing.module';
 
 @NgModule({
   declarations: [UserinterfaceComponent],
-  imports: [
-    CommonModule,
-    UserinterfaceRoutingModule
-  ],
-  exports: [UserinterfaceComponent],
+  imports: [CommonModule, UserinterfaceRoutingModule],
+  exports: [UserinterfaceComponent]
 })
-export class UserinterfaceModule { }
+export class UserinterfaceModule {}

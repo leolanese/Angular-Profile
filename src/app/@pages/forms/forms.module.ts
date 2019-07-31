@@ -5,10 +5,7 @@ import { FormsRoutingModule } from './forms-routing.module';
 
 @NgModule({
   declarations: [FormsComponent],
-  imports: [
-    CommonModule,
-    FormsRoutingModule
-  ],
-  exports: [FormsComponent],
+  imports: [CommonModule, FormsRoutingModule],
+  exports: [FormsComponent]
 })
-export class FormsModule { }
+export class FormsModule {}

@@ -8,7 +8,7 @@ import { Pipe, PipeTransform } from '@angular/core';
  *  // value.name = daniel
  *  {{ value.name | capitalizefirst  }}
  *  fromats to: Daniel
-*/
+ */
 @Pipe({
   name: 'capitalizeFirst'
 })

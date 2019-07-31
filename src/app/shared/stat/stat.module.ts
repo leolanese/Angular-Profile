@@ -3,12 +3,8 @@ import { NgModule } from '@angular/core';
 import { StatComponent } from './stat.component';
 
 @NgModule({
-  declarations: [
-    StatComponent
-  ],
+  declarations: [StatComponent],
   imports: [CommonModule],
-  exports: [
-    StatComponent
-  ],
+  exports: [StatComponent]
 })
-export class StatComponentModule { }
+export class StatComponentModule {}

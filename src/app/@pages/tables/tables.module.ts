@@ -5,10 +5,7 @@ import { TablesRoutingModule } from './tables-routing.module';
 
 @NgModule({
   declarations: [TablesComponent],
-  imports: [
-    CommonModule,
-    TablesRoutingModule
-  ],
-  exports: [TablesComponent],
+  imports: [CommonModule, TablesRoutingModule],
+  exports: [TablesComponent]
 })
-export class TablesModule { }
+export class TablesModule {}

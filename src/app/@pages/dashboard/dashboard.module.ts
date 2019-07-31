@@ -12,9 +12,7 @@ import { CardSingleActionsComponentModule } from 'src/app/shared/card-single-act
 import { HeadComponentModule } from 'src/app/shared/head/head.module';
 
 @NgModule({
-  declarations: [
-    DashboardComponent
-  ],
+  declarations: [DashboardComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
@@ -26,8 +24,6 @@ import { HeadComponentModule } from 'src/app/shared/head/head.module';
     CardSingleActionsComponentModule,
     HeadComponentModule
   ],
-  exports: [
-    DashboardComponent
-  ],
+  exports: [DashboardComponent]
 })
-export class DashboardModule { }
+export class DashboardModule {}

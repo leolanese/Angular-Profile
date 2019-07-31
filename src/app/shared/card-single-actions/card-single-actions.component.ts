@@ -16,8 +16,7 @@ export class CardSingleActionsComponent implements OnInit {
 
   title = 'Mimecast';
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
-
 }

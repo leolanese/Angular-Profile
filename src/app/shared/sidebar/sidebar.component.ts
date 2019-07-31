@@ -7,14 +7,9 @@ import { Router } from '@angular/router';
   styles: []
 })
 export class SidebarComponent implements OnInit {
-
   res: any;
 
-  constructor(
-    public router: Router
-  ) { }
+  constructor(public router: Router) {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  Output,
+  Input,
+  EventEmitter
+} from '@angular/core';
 import { MessageService } from '../../services/index';
 
 import * as data from '../../shared/json/cv.json';
@@ -11,28 +18,25 @@ import * as data from '../../shared/json/cv.json';
 })
 export class StatComponent {
   @Output()
-  triggerCardEvent: EventEmitter<Event>  = new EventEmitter<Event>();
+  triggerCardEvent: EventEmitter<Event> = new EventEmitter<Event>();
 
-  onTriggerCardEvent(event: Event): void{
+  onTriggerCardEvent(event: Event): void {
     console.log('triggerStatEvent', event);
     this.triggerCardEvent.emit(event);
   }
 
   onSendMessage(): void {
-    let name = "Leo Lanese";
+    let name = 'Leo Lanese';
     let profesion = 'Front-End Developer';
     let cv = data;
-      // send message to subscribers via observable subject
-      this.messageService.sendMessage(name, profesion, cv);
+    // send message to subscribers via observable subject
+    this.messageService.sendMessage(name, profesion, cv);
   }
 
   onClearMessage(): void {
-      // clear message
-      this.messageService.clearMessage();
+    // clear message
+    this.messageService.clearMessage();
   }
 
-  constructor(private messageService: MessageService) { }
-
-
-
+  constructor(private messageService: MessageService) {}
 }

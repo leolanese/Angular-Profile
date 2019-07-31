@@ -5,12 +5,7 @@ import { CardsRoutingModule } from './cards-routing.module';
 
 @NgModule({
   declarations: [CardsComponent],
-  imports: [
-    CommonModule,
-    CardsRoutingModule
-  ],
-  exports: [
-    CardsComponent
-  ]
+  imports: [CommonModule, CardsRoutingModule],
+  exports: [CardsComponent]
 })
-export class CardsModule { }
+export class CardsModule {}

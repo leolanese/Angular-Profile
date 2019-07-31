@@ -5,10 +5,7 @@ import { ContentRoutingModule } from './content-routing.module';
 
 @NgModule({
   declarations: [ContentComponent],
-  imports: [
-    CommonModule,
-    ContentRoutingModule
-  ],
-  exports: [ContentComponent],
+  imports: [CommonModule, ContentRoutingModule],
+  exports: [ContentComponent]
 })
-export class ContentModule { }
+export class ContentModule {}

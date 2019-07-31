@@ -6,11 +6,7 @@ import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [ChartjsComponent],
-  imports: [
-    CommonModule,
-    ChartjsRoutingModule,
-    ChartsModule
-  ],
-  exports: [ChartjsComponent],
+  imports: [CommonModule, ChartjsRoutingModule, ChartsModule],
+  exports: [ChartjsComponent]
 })
-export class ChartjsModule { }
+export class ChartjsModule {}

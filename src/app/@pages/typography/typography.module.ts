@@ -5,10 +5,7 @@ import { TypographyRoutingModule } from './typograpy-routing.module';
 
 @NgModule({
   declarations: [TypographyComponent],
-  imports: [
-    CommonModule,
-    TypographyRoutingModule
-  ],
-  exports: [TypographyComponent],
+  imports: [CommonModule, TypographyRoutingModule],
+  exports: [TypographyComponent]
 })
-export class TypographyModule { }
+export class TypographyModule {}

@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   subscription$: Subscription;
 
   defaultTitle = 'default title';
-  defaultSubtitle = 'Sub Caca'
+  defaultSubtitle = 'Sub Caca';
 
   cardTitle = 'cardTitle';
   action1 = 'action1';
@@ -36,21 +36,18 @@ export class DashboardComponent implements OnInit, OnDestroy {
     { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
   ];
 
-  constructor(private messageService: MessageService) { }
+  constructor(private messageService: MessageService) {}
 
   ngOnInit() {
     // subscribe to home component messages
-    this.subscription$ = this.messageService
-      .getMessage()
-      .subscribe(message => {
-        console.log('Container DashboardComponent reciving message:', message);
-        this.message = message;
-      });
+    this.subscription$ = this.messageService.getMessage().subscribe(message => {
+      console.log('Container DashboardComponent reciving message:', message);
+      this.message = message;
+    });
   }
 
   ngOnDestroy() {
     // unsubscribe to ensure no memory leaks
     this.subscription$.unsubscribe();
   }
-
 }

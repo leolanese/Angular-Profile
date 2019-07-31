@@ -7,17 +7,8 @@ import { CardSingleActionsComponent } from './../card-single-actions/card-single
 import { CapitalizeFirstPipe } from '../../shared/pipes/capitalizefirst.pipe';
 
 @NgModule({
-  declarations: [
-    CardSingleComponent,
-    CardSingleActionsComponent,
-    CapitalizeFirstPipe
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    CardSingleComponent,
-    CardSingleActionsComponent
-  ],
+  declarations: [CardSingleComponent, CardSingleActionsComponent, CapitalizeFirstPipe],
+  imports: [CommonModule],
+  exports: [CardSingleComponent, CardSingleActionsComponent]
 })
-export class CardSingleComponentModule { }
+export class CardSingleComponentModule {}

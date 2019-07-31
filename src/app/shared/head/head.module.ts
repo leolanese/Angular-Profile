@@ -3,12 +3,8 @@ import { NgModule } from '@angular/core';
 import { HeadComponent } from './head.component';
 
 @NgModule({
-  declarations: [
-    HeadComponent
-  ],
+  declarations: [HeadComponent],
   imports: [CommonModule],
-  exports: [
-    HeadComponent
-  ],
+  exports: [HeadComponent]
 })
-export class HeadComponentModule { }
+export class HeadComponentModule {}

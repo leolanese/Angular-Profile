@@ -5,17 +5,8 @@ import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    SidebarComponent,
-    HeaderComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
-  exports: [
-    SidebarComponent,
-    HeaderComponent
-  ]
+  declarations: [SidebarComponent, HeaderComponent],
+  imports: [CommonModule, RouterModule],
+  exports: [SidebarComponent, HeaderComponent]
 })
-export class SharedModule { }
+export class SharedModule {}

@@ -7,10 +7,7 @@ import { ChangeDetectionStrategy, Component, OnInit, Output, Input } from '@angu
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

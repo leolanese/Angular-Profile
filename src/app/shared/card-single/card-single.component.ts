@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  Output,
+  Input,
+  EventEmitter
+} from '@angular/core';
 
 @Component({
   selector: 'card-single-component',
@@ -24,8 +31,7 @@ export class CardSingleComponent implements OnInit {
     this.dropdownClick.emit(event);
   }
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
-
 }

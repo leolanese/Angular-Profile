@@ -3,12 +3,8 @@ import { NgModule } from '@angular/core';
 import { CardListComponent } from './card-list.component';
 
 @NgModule({
-  declarations: [
-    CardListComponent
-  ],
+  declarations: [CardListComponent],
   imports: [CommonModule],
-  exports: [
-    CardListComponent
-  ],
+  exports: [CardListComponent]
 })
-export class CardListComponentModule { }
+export class CardListComponentModule {}
