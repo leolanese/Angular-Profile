@@ -86,7 +86,5 @@
     "use-lifecycle-interface": true,
     "use-pipe-transform-interface": true
   },
-  "rulesDirectory": [
-    "codelyzer"
-  ]
+  "rulesDirectory": ["node_modules/codelyzer", "node_modules/rxjs-tslint", "tslint-rules"]
 }

@@ -1,5 +1,5 @@
 /*!
- * spur-template - An admin template based on Bootstrap 4
+ * portfolio-template - An admin template based on Bootstrap 4
  * Version v1.1.0
  * Copyright 2016 - 2019 Alexander Rechsteiner
  * https://hackerthemes.com
@@ -8634,11 +8634,11 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.spur-card {
+.portfolio-card {
   border: 1px solid #D3D3D3;
   background: #fff;
   margin-bottom: 30px; }
-  .spur-card .card-header {
+  .portfolio-card .card-header {
     min-height: 57px;
     background-color: #F0F1F7;
     display: -webkit-box;
@@ -8650,22 +8650,22 @@ a.text-dark:hover, a.text-dark:focus {
         -ms-flex-align: center;
             align-items: center;
     padding: 8px 32px; }
-  .spur-card .card-body {
+  .portfolio-card .card-body {
     padding: 24px 32px; }
     @media (max-width: 767.98px) {
-      .spur-card .card-body {
+      .portfolio-card .card-body {
         padding: 12px 18px; } }
 
-.spur-card-icon {
+.portfolio-card-icon {
   margin-right: 20px; }
 
-.spur-card-title {
+.portfolio-card-title {
   font-weight: bold; }
 
-.spur-card-menu {
+.portfolio-card-menu {
   margin-left: auto; }
 
-.spur-card-menu-link {
+.portfolio-card-menu-link {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8681,7 +8681,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 30px;
   height: 30px;
   margin-right: -15px; }
-  .spur-card-menu-link::after {
+  .portfolio-card-menu-link::after {
     content: "";
     display: inline-block;
     width: 0;
@@ -8689,14 +8689,14 @@ a.text-dark:hover, a.text-dark:focus {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid rgba(81, 81, 81, 0.8); }
-  .text-white .spur-card-menu-link::after {
+  .text-white .portfolio-card-menu-link::after {
     border-top-color: #fff; }
 
-.spur-card-body-chart {
+.portfolio-card-body-chart {
   position: relative;
   max-width: 99%; }
   @media (max-width: 767.98px) {
-    .spur-card-body-chart {
+    .portfolio-card-body-chart {
       padding: 12px 5px; } }
 
 h1 {
@@ -8779,10 +8779,10 @@ body {
           align-items: center;
   min-height: 100vh;
   padding-top: 100px; }
-  .form-screen .spur-logo {
+  .form-screen .portfolio-logo {
     margin-bottom: 60px;
     opacity: .9; }
-    .form-screen .spur-logo i {
+    .form-screen .portfolio-logo i {
       color: #515151; }
 
 .account-dialog {
@@ -8861,7 +8861,7 @@ body {
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex; } }
-    .dash-nav header .spur-logo {
+    .dash-nav header .portfolio-logo {
       margin-right: auto;
       padding-right: 42px; }
   .dash-nav a {
@@ -8873,7 +8873,7 @@ body {
     .dash-nav.dash-nav-dark a {
       color: #fff; }
 
-.spur-logo {
+.portfolio-logo {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -8886,10 +8886,10 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .spur-logo:focus, .spur-logo:active, .spur-logo:hover {
+  .portfolio-logo:focus, .portfolio-logo:active, .portfolio-logo:hover {
     color: #515151;
     text-decoration: none; }
-  .spur-logo i {
+  .portfolio-logo i {
     color: #576177;
     font-size: 27px;
     margin-right: 10px; }

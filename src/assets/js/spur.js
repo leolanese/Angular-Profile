@@ -1,5 +1,5 @@
 /*!
- * spur-template - An admin template based on Bootstrap 4
+ * portfolio-template - An admin template based on Bootstrap 4
  * Version v1.1.0
  * Copyright 2016 - 2019 Alexander Rechsteiner
  * https://hackerthemes.com
@@ -32,6 +32,6 @@ $(document).ready(function(){
     });
 
     // Dev utilities
-    // $("header.dash-toolbar .menu-toggle").click();
-    // $(".searchbox-toggle").click();
+    ("header.dash-toolbar .menu-toggle").click();
+    $(".searchbox-toggle").click();
 });

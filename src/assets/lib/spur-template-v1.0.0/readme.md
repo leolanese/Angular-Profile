@@ -14,7 +14,7 @@ Please find the download and detailed instructions at https://hackerthemes.com/b
 
 You can also install using npm:
 
-```npm install spur-template```
+```npm install portfolio-template```
 
 ## Creators
 
