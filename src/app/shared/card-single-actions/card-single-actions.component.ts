@@ -10,11 +10,11 @@ export class CardSingleActionsComponent implements OnInit {
   @Input()
   action1: string;
   @Input()
-  actio2: string;
+  action2: string;
   @Input()
   action3: string;
 
-  title = 'Mimecast';
+  title = '';
 
   constructor() {}
 

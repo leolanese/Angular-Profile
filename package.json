@@ -3,7 +3,7 @@
   "version": "2.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 9500",
     "start:development": "node --max-old-space-size=8192 node_modules/@angular/cli/bin/ng serve --configuration development",
     "build": "ng build",
     "lint": "ng lint",
@@ -68,6 +68,7 @@
     "@types/jasmine": "^3.3.16",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "~8.9.4",
+    "@types/ramda": "^0.26.33",
     "codelyzer": "^5.1.2",
     "husky": "^3.0.4",
     "jasmine-core": "~3.4.0",
@@ -82,8 +83,11 @@
     "ng-bullet": "^1.0.3",
     "prettier": "1.18.2",
     "protractor": "~5.4.0",
+    "ramda": "^0.26.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
     "typescript": "~3.4.3"
   }
 }

@@ -9,4 +9,8 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  passTheSalt($event) {
+    console.log('passTheSalt  trigger');
+  }
 }

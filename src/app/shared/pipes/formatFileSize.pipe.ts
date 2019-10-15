@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Injectable, Pipe, PipeTransform } from '@angular/core';
 
 const FILE_SIZE_UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
 const FILE_SIZE_UNITS_LONG = [
@@ -14,6 +14,9 @@ const FILE_SIZE_UNITS_LONG = [
 
 @Pipe({
   name: 'formatFileSize'
+})
+@Injectable({
+  providedIn: 'root'
 })
 export class FormatFileSizePipe implements PipeTransform {
   transform(sizeInBytes: number, longForm: boolean): string {
