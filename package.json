@@ -17,7 +17,7 @@
     "deploy-storybook": "rimraf ./storybook-static && build-storybook",
     "prettier": "prettier --write --list-different src/**/*.ts",
     "tslint": "tslint --config tslint.json '**/*.ts' -e 'node_modules/**' -e '**/*.spec.ts' -e '**/*.stories.ts' -e '**/*.d.ts' -e '**/*.mock.ts' -e '**/polyfills.ts' ",
-    "prepush": "npm audit fix && npm run test && npm run build:prod",
+    "prepush": "npm run test && npm run build:prod",
     "sonar": "sonar-scanner.bat && start chrome --new-window \"http://localhost:9200\""
   },
   "husky": {
