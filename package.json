@@ -4,11 +4,34 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:development": "node --max-old-space-size=8192 node_modules/@angular/cli/bin/ng serve --configuration development",
     "build": "ng build",
-    "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "compodoc": "npx compodoc -p tsconfig.app.json --output docs/documentation"
+    "build:prod": "ng build --prod",
+    "test": "ng test --no-watch --codeCoverage --source-map=false",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless  --source-map=false",
+    "test:watch": "ng test --watch=true --browsers=ChromeHeadless",
+    "compodoc": "npx compodoc -p tsconfig.app.json --theme material  --name 'Leo Lanese Portfolio' --serve --port 2200 --hideGenerator --open",
+    "storybook": "start-storybook -p 6000",
+    "deploy-storybook": "rimraf ./storybook-static && build-storybook",
+    "prettier": "prettier --write --list-different src/**/*.ts",
+    "tslint": "tslint --config tslint.json '**/*.ts' -e 'node_modules/**' -e '**/*.spec.ts' -e '**/*.stories.ts' -e '**/*.d.ts' -e '**/*.mock.ts' -e '**/polyfills.ts' ",
+    "prepush": "npm audit fix && npm run test && npm run build:prod",
+    "sonar": "sonar-scanner.bat && start chrome --new-window \"http://localhost:9200\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run prepush"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run prettier",
+      "npm run tslint",
+      "git add"
+    ]
   },
   "private": true,
   "dependencies": {
@@ -24,7 +47,9 @@
     "ng2-charts": "^2.3.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "angular-polyfills": "*",
+    "@angular/cdk": "^8.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.800.0",
@@ -36,8 +61,12 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.4.1",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
+    "jasmine-marbles": "^0.4.0",
+    "ng-bullet": "^1.0.3",
     "karma": "~4.1.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
@@ -47,6 +76,14 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "typescript": "~3.4.3",
+    "@storybook/addon-a11y": "^4.1.13",
+    "@storybook/addon-actions": "^4.1.13",
+    "@storybook/addon-knobs": "^4.1.13",
+    "@storybook/addon-links": "^4.1.13",
+    "@storybook/addon-notes": "^4.1.13",
+    "@storybook/addon-storysource": "^4.1.13",
+    "@storybook/addons": "^4.1.13",
+    "@storybook/angular": "^4.1.13"
   }
 }
