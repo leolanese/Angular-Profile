@@ -13,7 +13,8 @@ export class CardsComponent implements OnInit, OnDestroy {
   subscription$: Subscription;
   cardTitle: any;
   cardBody: any;
-  jobsCounter: number[];
+  cardInfo: any;
+  jobsCounters: number[];
 
   @Input()
   cards: string[];
@@ -30,7 +31,7 @@ export class CardsComponent implements OnInit, OnDestroy {
       console.log('Container DashboardComponent receiving message:', card);
       console.log('Container cards times:', card[0][0].job.length);
       this.cards = card;
-      this.jobsCounter = [...Array(card[0][0].job.length).keys()];
+      this.jobsCounters = [...Array(card[0][0].job.length).keys()];
     });
 
     this.messageService.sendMessage(subjectData);

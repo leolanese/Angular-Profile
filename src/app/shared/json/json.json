@@ -13,13 +13,15 @@
       "role": "UI Software Engineer",
       "date": " 06/2017 - 05/2019",
       "country": "UK",
+      "info": "https://accuity.com/brand-homepage/bankers-almanac-for-risk-and-compliance/",
       "description": "During the time I produced a predictive and future proof component-oriented WebApp with the highest attention to detail and striving for clean, simple, elegant and reusable code."
     },
     {
-      "company": "Mimecast ",
+      "company": "Mimecast",
       "role": "UI Software Engineer",
       "date": " 04/2017 - 05/2019",
       "country": "UK",
+      "info": "https://community.mimecast.com/s/article/The-Administration-Console-User-Interface-1818047779",
       "description": "During the time I produced a robust combination of reusable Components that combine into a Client UI super reactive category SPA Web Application. These individual apps provide a cyber resilience for an email offering cloud security, archiving and continuity services. My task was to take care of the migration and development of new components used by the rest of the developers, automate tasks and create the structure that other developers will follow as well as assisting and mentoring less senior engineers of the team."
     },
     {
@@ -27,13 +29,7 @@
       "role": "UI Software Engineer",
       "date": " 09/2014 - 03/2017",
       "country": "UK",
-      "description": "During my time at the MET I produced a responsive component-oriented SPA PWA Web App, this solution generates the UI and performs a communication channel between Police Command Centre and Patrol Units. Working with PouchDB handle by the tablets in sync with the command centre MongoDB database. Mentoring and providing guidance and mentoring to less senior engineers"
-    },
-    {
-      "company": "Thomas Cook",
-      "role": "Front-end Developer",
-      "date": "04/2014 - 08/2014",
-      "country": "UK",
+      "info": "https://www.london.gov.uk/sites/default/files/q4_business_plan_progress_report_final.pdf",
       "description": "During my time at the MET I produced a responsive component-oriented SPA PWA Web App, this solution generates the UI and performs a communication channel between Police Command Centre and Patrol Units. Working with PouchDB handle by the tablets in sync with the command centre MongoDB database. Mentoring and providing guidance and mentoring to less senior engineers"
     },
     {
@@ -55,6 +51,7 @@
       "role": "Lead Front-end Developer",
       "date": "02/2013 - 06/2013",
       "country": "UK",
+      "info": "https://www.cms-lawnow.com/regzone",
       "description": "Successfully created a Responsive Web. working day to day responsive and cross-platform problems and mentoring junior developers, from Mobile First wireframes to final implementation. Liaising with the designers and mentoring about the latest trends, multi-device layouts, RWD, content-first strategy priorities"
     },
     {
@@ -62,6 +59,7 @@
       "role": "Front-end Developer",
       "date": "02/2012 - 08/2012",
       "country": "UK",
+      "info": "https://www.nowtv.com",
       "description": "Successfully produced a Responsive Web developer solution working on an eXtreme programming set of values, principles, and practices for rapidly developing high-quality software that provides the highest value in the fastest possible way."
     },
     {
@@ -69,6 +67,7 @@
       "role": "Front-end Developer",
       "date": "01/2011 - 01/2012",
       "country": "UK",
+      "info": "https://www.bbc.com",
       "description": "During my period in the BBC I was part of the HomePage Team. We successfully developed a Responsive Web Application, to generate the new Responsive website. Getting involved in real user testing and guerrilla usability testing and development process improving Mobile usability, UX and device optimisation."
     },
     {
@@ -76,6 +75,7 @@
       "role": "Lead Front-end Developer",
       "date": "02/2010 - 08/2010",
       "country": "Spain",
+      "info": "https://www.rumbo.es/",
       "description": "During my time at Rumbo, I produced a new GUI and interactive search, improving the usability for commercial purposes."
     },
     {
@@ -83,6 +83,7 @@
       "role": "Front-end Developer",
       "date": "07/2009-01/2010",
       "country": "Germany",
+      "info": "https://www.here.com/",
       "description": "Similar to google maps, I was involved in the Nokia development of the multiplatform map web solution."
     },
     {
@@ -90,6 +91,7 @@
       "role": "Front-end Developer",
       "date": "08/2008-03/2009",
       "country": "UK",
+      "info": "https://en.wikipedia.org/wiki/Flirtomatic",
       "description": "Successfully produced a Mobile/Desktop Web developer role implementing GUI/UX for Mobile/Desktop for low/high-end devices."
     },
     {
@@ -97,6 +99,7 @@
       "role": "Web Developer",
       "date": "11/2006-04/2008",
       "country": "Spain",
+      "info": "https://www.theice.com/market-data",
       "description": "Developing a desktop and hybrid iOS Web APP and websites using real-time push data for several clients."
     }
   ],

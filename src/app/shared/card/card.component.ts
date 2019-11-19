@@ -10,10 +10,13 @@ export class CardComponent implements OnInit {
   constructor() {}
 
   @Input()
-  cardTitle: any;
+  cardTitle: string;
 
   @Input()
-  cardBody: any;
+  cardBody: string;
+
+  @Input()
+  cardInfo: string;
 
   ngOnInit() {}
 }
