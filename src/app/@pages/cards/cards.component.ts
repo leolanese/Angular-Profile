@@ -33,7 +33,7 @@ export class CardsComponent implements OnInit, OnDestroy {
     this.subscription$ = this.messageService.getMessage().subscribe(card => {
       this.cards = card;
       this.jobsCounters = [...Array(card[0][0].job.length).keys()];
-      this.keyTechnologies = card[0][0].keytechnologies;
+      this.keyTechnologies = card[0][0].keytechnologies.join(', ');
     });
 
     this.messageService.sendMessage(subjectData);
