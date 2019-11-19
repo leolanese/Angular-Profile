@@ -9,6 +9,14 @@
   ],
   "job": [
     {
+      "company": "Contractor",
+      "role": "UI Software Engineer",
+      "date": " 12/2010 - Present",
+      "country": "UK",
+      "info": "http://www.leolanese.com",
+      "description": "I have been contracting for several clients mainly using AngularJS, Angular, @ngrx, TypeScript, React, JavaScript, Karma/Jasmine, Jest working on mobile device web UIs (Progressive Web Apps) and multiplatform Responsive Web Design on backend using PHP and JSP with data-bases: PouchDB and MongoDB. These have been the main roles I have fulfilled during this time, also combined with smaller freelance projects."
+    },
+    {
       "company": "Accuity Banking",
       "role": "UI Software Engineer",
       "date": " 06/2017 - 05/2019",
@@ -116,6 +124,12 @@
     }
   ],
   "sparetime": [
+    {
+      "role": "Developer Writer",
+      "presentation": "https://dev.to/leolanese",
+      "institution": "dev.to",
+      "date": 2019
+    },
     {
       "role": "Influencer ReactJS Conference",
       "presentation": "",

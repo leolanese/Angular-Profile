@@ -9,5 +9,12 @@ import { ChangeDetectionStrategy, Component, OnInit, Output, Input } from '@angu
 export class CardListComponent implements OnInit {
   constructor() {}
 
+  @Input()
+  cardTitle: string;
+  @Input()
+  cardRole: string;
+  @Input()
+  cardDate: string;
+
   ngOnInit() {}
 }

@@ -1,22 +1,42 @@
 <h1 class="dash-title">
-  Cards
+  Portfolio
 </h1>
 
-<p class="mb-5">
-  Cards are simply Bootstrap cards with some added features for the dashboard environment.
-</p>
+<h2 class="mb-5">
+  Key Technologies:
+</h2>
+<p>{{keyTechnologies}}</p>
 
-<card-list-component></card-list-component>
+<br/>
 
-<div *ngFor="let jobsCounter of jobsCounters; let n = index;">
-  <div *ngFor="let card of cards">
-
-      <card-component
-        [cardTitle]="card[0]?.job[n]?.company"
-        [cardBody]="card[0]?.job[n]?.description"
-        [cardInfo]="card[0]?.job[n]?.info"
-      ></card-component>
-
+<div class="card portfolio-card">
+  <div class="card-header">
+    <div class="portfolio-card-icon">
+      <i class="fas fa-bell"></i>
+    </div>
+    <div class="portfolio-card-title">{{cardComponentTitle}}</div>
+  </div>
+  <div class="card-body">
+    <div class="notifications">
+      <div *ngFor="let jobsCounter of jobsCounters; let n = index;">
+        <div *ngFor="let card of cards">
+          <card-list-component
+            [cardTitle]="card[0]?.job[n]?.company"
+            [cardRole]="card[0]?.job[n]?.role"
+            [cardDate]="card[0]?.job[n]?.date"
+          ></card-list-component>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
+<div *ngFor="let jobsCounter of jobsCounters; let n = index;">
+  <div *ngFor="let card of cards">
+    <card-component
+      [cardTitle]="card[0]?.job[n]?.company"
+      [cardBody]="card[0]?.job[n]?.description"
+      [cardInfo]="card[0]?.job[n]?.info"
+    ></card-component>
+  </div>
+</div>
