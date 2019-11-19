@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit, Input } from '@angular/core';
-import {observable, Subscription} from 'rxjs';
+import { Subscription} from 'rxjs';
 import { MessageService } from '../../services';
-import * as data from '../../shared/json/cv.json';
+import * as data from '../../shared/json/json.json';
 
 @Component({
   selector: 'app-cards',
@@ -11,7 +11,9 @@ import * as data from '../../shared/json/cv.json';
 export class CardsComponent implements OnInit, OnDestroy {
   message: object;
   subscription$: Subscription;
-  value: any;
+  cardTitle: any;
+  cardBody: any;
+  jobsCounter: number[];
 
   @Input()
   cards: string[];
@@ -19,17 +21,19 @@ export class CardsComponent implements OnInit, OnDestroy {
   constructor(private messageService: MessageService) {}
 
   ngOnInit() {
-    const cv = data;
+    const subjectData = data;
     // send message to subscribers via observable subject
-    this.messageService.sendMessage(cv);
+    this.messageService.sendMessage(subjectData);
 
     // subscribe to home component messages
     this.subscription$ = this.messageService.getMessage().subscribe(card => {
       console.log('Container DashboardComponent receiving message:', card);
+      console.log('Container cards times:', card[0][0].job.length);
       this.cards = card;
+      this.jobsCounter = [...Array(card[0][0].job.length).keys()];
     });
 
-    this.messageService.sendMessage(cv);
+    this.messageService.sendMessage(subjectData);
   }
 
   ngOnDestroy() {

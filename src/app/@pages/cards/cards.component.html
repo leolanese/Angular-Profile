@@ -6,13 +6,19 @@
   Cards are simply Bootstrap cards with some added features for the dashboard environment.
 </p>
 
-<card-list-component></card-list-component>
+<!--<card-list-component></card-list-component>-->
 
-<div *ngFor="let card of cards | keyvalue ">
+<div *ngFor="let card of cards; let i = index;">
 <!--  {{ card | json }}-->
-  {{card.key}}: {{card.value}}
+<!--  {{card[0].name}}-->
+
+  <div *ngFor="let card of jobsCounter">
+    caca
+  </div>
+
   <card-component
-    [value]=[card.value]
+    [cardTitle]="card[i].job[i].company"
+    [cardBody]="card[i].job[i].description"
   ></card-component>
 </div>
 

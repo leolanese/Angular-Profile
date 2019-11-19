@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { MessageService } from '../../services/index';
 
-import * as data from '../../shared/json/cv.json';
+import * as data from '../json/json.json';
 
 @Component({
   selector: 'stat-component',
