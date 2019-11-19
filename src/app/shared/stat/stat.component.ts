@@ -26,11 +26,9 @@ export class StatComponent {
   }
 
   onSendMessage(): void {
-    let name = 'Leo Lanese';
-    let profesion = 'Front-End Developer';
     let cv = data;
     // send message to subscribers via observable subject
-    this.messageService.sendMessage(name, profesion, cv);
+    this.messageService.sendMessage(cv);
   }
 
   onClearMessage(): void {

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/cards', pathMatch: 'full' },
   {
     path: 'blank',
     loadChildren: () => import('./@pages/blank/blank.module').then(m => m.BlankModule)

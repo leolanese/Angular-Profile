@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
+import * as data from '../shared/json/cv.json';
 
 @Injectable()
 export class MessageService {
   private subject = new Subject<any>();
 
-  sendMessage(name: string, profession: string, cv: object) {
-    this.subject.next({
-      name, profession, cv
-    });
+  sendMessage(cv: object) {
+    this.subject.next({cv});
   }
 
   clearMessage() {
