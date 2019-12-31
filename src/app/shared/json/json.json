@@ -3,14 +3,14 @@
   "name": "Leo Lanese",
   "nationality": ["Britain", "Italy", "Argentina"],
   "keytechnologies": [
-    "AngularJS", "Angular6/7+", "ReactJS", "IP/OOP/Functional Programming/Reactive Functional Programming", "JS/ES6+/TS", "Callback/Promise/Observable$",
+    "Angular", "Angular6/7/8+", "ReactJS", "Svelte", "IP/OOP/Functional Programming/Reactive Functional Programming", "JS/ES6+/TS", "Callback/Promise/Observable$",
     "RxJS", "Redux/@ngrx/store", "Responsive Web Design", "Mobile First", "CSS/SASS", "Storybook", "Angular Material 2/CDK", "HTML5", "FLEX/GRID", "GUI/UX",
     "Certified ScrumMaster (CSM)", "Grunt/Gulp/WebPack2", "JS Design Patterns", "Karma/Jasmine/Jest", "GIT", "NoSQL", "CI/CD: Jenkins. GitLab", "Rest API", "Angular CLI", "Java(JSP)"
   ],
   "job": [
     {
-      "company": "Contractor",
-      "role": "UI Software Engineer",
+      "company": "SeaMAr Acc. LTd. Contractor",
+      "role": "Software Engineer",
       "date": " 12/2010 - Present",
       "country": "UK",
       "info": "http://www.leolanese.com",
@@ -19,7 +19,7 @@
     {
       "company": "Accuity Banking",
       "role": "Lead Developer / Senior Front-end Developer.",
-      "date": " 06/2019 - Present",
+      "date": " 06/2019 - 01/2020",
       "country": "UK",
       "info": "https://accuity.com/brand-homepage/bankers-almanac-for-risk-and-compliance/",
       "description": "During the time I produced a predictive and future proof component-oriented WebApp with the highest attention to detail and striving for clean, simple, elegant and reusable code."
