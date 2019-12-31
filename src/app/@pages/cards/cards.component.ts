@@ -1,5 +1,5 @@
-import {Component, OnDestroy, OnInit, Input, ChangeDetectionStrategy} from '@angular/core';
-import { Subscription} from 'rxjs';
+import { Component, OnDestroy, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { MessageService } from '../../services';
 import * as data from '../../shared/json/json.json';
 

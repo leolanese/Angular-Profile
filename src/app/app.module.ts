@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 
 import { MessageService } from './services/index';
-import {SidebarModule} from "./shared/sidebar";
-import {HeaderComponentModule} from "./shared/header";
+import { SidebarModule } from './shared/sidebar';
+import { HeaderComponentModule } from './shared/header';
 
 @NgModule({
   declarations: [AppComponent],
