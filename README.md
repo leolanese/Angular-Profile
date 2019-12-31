@@ -10,7 +10,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## ToDo's
 
-[ ] More features
+[ ] More featuresassets/css/portfolio.css
 
 [ ] Improve documentation
 

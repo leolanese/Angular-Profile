@@ -20,10 +20,6 @@ const routes: Routes = [
     loadChildren: () => import('./@pages/content/content.module').then(m => m.ContentModule)
   },
   {
-    path: 'dashboard',
-    loadChildren: () => import('./@pages/dashboard/dashboard.module').then(m => m.DashboardModule)
-  },
-  {
     path: 'forms',
     loadChildren: () => import('./@pages/forms/forms.module').then(m => m.FormsModule)
   },
@@ -50,10 +46,8 @@ const routes: Routes = [
       import('./@pages/userinterface/userinterface.module').then(m => m.UserinterfaceModule)
   },
   { path: 'login', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'register', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: '**', redirectTo: '/dashboard', pathMatch: 'full' }
+  { path: 'register', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
-
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
